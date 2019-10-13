@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:layoutDirection="rtl"
+    android:layout_margin="5dp"
+    android:background="@drawable/draw_arround_image">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txt_name_item_order_list_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5dp"
+        android:layout_toRightOf="@+id/txt_seen_item_order_list_user"
+        android:layout_marginTop="5dp"
+        android:gravity="right|center_vertical"
+        android:layout_below="@+id/txt_unit_item_order_list_user"
+        android:padding="2dp"
+        android:scrollbars="vertical"
+        android:text="@string/txt_objectName"
+        android:textColor="#000" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/flt_edit_item_order_list_user"
+        style="@style/float_style"
+        app:backgroundTint="#fff"
+        app:fabSize="mini"
+        app:srcCompat="@drawable/ic_edit_green" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txt_amount_item_order_list_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/txt_unit_item_order_list_user"
+        android:layout_marginTop="5dp"
+        android:gravity="left|center_vertical"
+        android:padding="2dp"
+        android:text="10000"
+        android:textSize="16sp"
+        android:textColor="#000" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txt_unit_item_order_list_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dp"
+        android:gravity="center_vertical"
+        android:padding="2dp"
+        android:text="@string/txt_unit"
+        android:textColor="#6e6e6e" />
+
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txt_date_item_order_list_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_name_item_order_list_user"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="5dp"
+        android:gravity="right|center_vertical"
+        android:padding="2dp"
+        android:text="date"
+        android:textColor="#6e6e6e" />
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txt_seen_item_order_list_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_unit_item_order_list_user"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="3dp"
+        android:padding="2dp"
+        android:text="@string/seen"
+        android:textColor="#f20e0e" />
+
+</RelativeLayout>

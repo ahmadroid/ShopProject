@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layoutDirection="rtl"
+    android:background="@drawable/draw_arround_image"
+    android:layout_margin="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:id="@+id/rel_layout_item_store"
+        >
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/txt_objectName"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:lines="3"
+            android:inputType="textMultiLine"
+            android:gravity="center_vertical"
+            android:id="@+id/txt_object_name_item_store"/>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/flt_edit_item_store"
+            android:layout_margin="10dp"
+            android:layout_alignParentLeft="true"
+            app:backgroundTint="#fff"
+            app:fabSize="mini"
+            app:srcCompat="@drawable/ic_edit_green"
+            />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/flt_insert_item_store"
+            style="@style/float_style"
+            app:backgroundTint="#fff"
+            app:fabSize="mini"
+            app:srcCompat="@android:drawable/ic_input_add"
+            />
+    </RelativeLayout>
+
+</LinearLayout>

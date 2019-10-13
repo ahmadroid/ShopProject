@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+
+        <!--<item-->
+            <!--android:id="@+id/item_select_pic_user"-->
+            <!--android:icon="@drawable/baseline_add_a_photo_black_18dp"-->
+            <!--android:title="@string/select_pic" />-->
+<!--        <item-->
+<!--            android:id="@+id/item_shop_user"-->
+<!--            android:icon="@drawable/ic_store_mall_directory"-->
+<!--            android:title="@string/item_shop" />-->
+        <item
+            android:id="@+id/item_version_user"
+            android:icon="@drawable/ic_about"
+            android:title="@string/item_version" />
+        <item
+            android:id="@+id/item_comment_user"
+            android:icon="@drawable/ic_comment"
+            android:title="@string/item_comment" />
+        <item
+            android:id="@+id/item_help_user"
+            android:title="@string/item_help"
+            android:icon="@drawable/ic_action_help"/>
+        <item
+            android:id="@+id/item_about_user"
+            android:title="@string/item_about"
+            android:icon="@drawable/ic_action_info"/>
+
+    </group>
+
+    <item
+        android:id="@+id/item_exit_user"
+        android:icon="@drawable/baseline_power_settings_new_black_18dp"
+        android:title="@string/item_exit" />
+
+</menu>

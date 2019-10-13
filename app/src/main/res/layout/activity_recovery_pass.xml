@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="rtl"
+    tools:context=".RecoveryPass">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="vertical">
+
+        <LinearLayout style="@style/linlayout_style">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/txtview_style"
+                android:layout_width="115dp"
+                android:text="@string/txt_user_star"
+                android:textColor="#d42329" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/edt_user_RecoveryPass"
+                style="@style/edttext_style"
+                android:inputType="textPersonName" />
+
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/linlayout_style">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/txtview_style"
+                android:layout_width="115dp"
+                android:inputType="number"
+                android:text="@string/txt_mobile_star"
+                android:textColor="#d42329" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/edt_mobile_RecoveryPass"
+                style="@style/edttext_style"
+                android:inputType="phone" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_RecoveryPass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/draw_btn_new"
+                android:layout_marginBottom="2dp"
+                android:text="@string/btn_recovery" />
+
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/prog_RecoveryPass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

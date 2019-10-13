@@ -1,0 +1,119 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="tab_style" parent="AppTheme">
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="AppTheme.NoActionBar.Fav" parent="AppTheme">
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+    </style>
+
+    <style name="edttext_style" parent="AppTheme">
+        <item name="android:background">@drawable/draw_arround_edittext</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:gravity">right|center_vertical</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_marginRight">5dp</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:paddingRight">3dp</item>
+        <item name="android:paddingLeft">1dp</item>
+    </style>
+
+    <style name="txtview_style" parent="AppTheme">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@drawable/draw_arround_textview</item>
+        <item name="android:gravity">right|center_vertical</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:padding">5dp</item>
+    </style>
+
+    <style name="linlayout_style" parent="AppTheme">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">right</item>
+        <item name="android:orientation">horizontal</item>
+
+    </style>
+
+    <style name="layout_noAction" parent="AppTheme">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="btn_extra_style" parent="AppTheme">
+        <item name="android:layout_width">60dp</item>
+        <item name="android:layout_height">35dp</item>
+        <item name="android:background">@drawable/draw_btn_extra</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginBottom">5dp</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:layout_alignParentLeft">true</item>
+
+    </style>
+
+    <style name="float_style" parent="AppTheme">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginBottom">5dp</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+
+    </style>
+
+    <style name="btn_style" parent="AppTheme">
+        <item name="android:textColor">@color/text_color</item>
+        <item name="android:background">@drawable/act_btn</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="input_edttext_style" parent="AppTheme">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:gravity">right|center_vertical</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">17sp</item>
+    </style>
+
+    <style name="input_layout_style" parent="AppTheme">
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/draw_input_edittext</item>
+    </style>
+
+    <style name="txt_input_layout_style" parent="AppTheme">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+    </style>
+
+
+</resources>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="10dp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/rel_layout_order_list_for_admin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ProgressBar
+                android:id="@+id/prog_order_list_for_admin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:visibility="invisible" />
+
+            <androidx.appcompat.widget.SearchView
+                android:id="@+id/srch_view_order_list_for_admin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:queryHint="@string/query_srch_order"
+                app:searchHintIcon="@drawable/ic_order" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_order_list_for_admin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/srch_view_order_list_for_admin" />
+        </RelativeLayout>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txt_empty_order_list_for_admin"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="120dp"
+            android:background="@drawable/draw_txt_list_empty"
+            android:gravity="center"
+            android:lines="4"
+            android:text="@string/txt_empty_orderList_admin"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+
+</androidx.core.widget.NestedScrollView>

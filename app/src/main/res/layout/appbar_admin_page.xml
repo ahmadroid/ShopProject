@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:layoutDirection="rtl"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:layout_margin="10dp"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:cardCornerRadius="5dp">
+            <androidx.appcompat.widget.Toolbar
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/toolbar_admin_page"
+                android:theme="@style/AppTheme.PopupOverlay"
+                app:layout_scrollFlags="scroll|enterAlways"
+                >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/app_name"
+                        android:layout_centerVertical="true"
+                        android:textSize="20sp"
+                        android:layout_alignParentRight="true"/>
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/npico2" />
+
+                </RelativeLayout>
+            </androidx.appcompat.widget.Toolbar>
+        </androidx.cardview.widget.CardView>
+
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tab_admin_page"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:tabGravity="fill"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:tabMode="fixed"
+            app:tabTextColor="#fff"
+            app:tabTextAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+            />
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <include layout="@layout/content_admin_page" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

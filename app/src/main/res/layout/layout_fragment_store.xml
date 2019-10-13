@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fitsSystemWindows="true"
+    android:padding="5dp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/rel_layout_store"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ProgressBar
+                android:id="@+id/prog_store"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:visibility="invisible" />
+
+            <androidx.appcompat.widget.SearchView
+                android:id="@+id/srch_view_store"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:queryHint="@string/query_srch_object"
+                app:searchHintIcon="@drawable/ic_object" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_objectList_store"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/srch_view_store">
+
+            </androidx.recyclerview.widget.RecyclerView>
+        </RelativeLayout>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txt_empty_store"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="120dp"
+            android:background="@drawable/draw_txt_list_empty"
+            android:gravity="center"
+            android:lines="4"
+            android:text="@string/txt_empty_storeList"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            android:visibility="invisible" />
+
+    </RelativeLayout>
+
+<!--    <android.support.design.widget.FloatingActionButton-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_gravity="bottom|start"-->
+<!--        android:layout_margin="10dp"-->
+<!--        android:src="@drawable/ic_add"-->
+<!--        android:backgroundTint="#fff"-->
+<!--        app:layout_behavior="com.example.ahmad2.shopproject.FabHide" />-->
+
+</androidx.core.widget.NestedScrollView>

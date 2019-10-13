@@ -1,0 +1,238 @@
+<resources>
+    <string name="app_name">نهاوند پاساژ</string>
+    <string name="title_activity_login">Sign in</string>
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="title_order_delete">اخطار حذف درخواست</string>
+    <string name="title_activity_request_login">RequestLogin</string>
+    <string name="item_personInfo">اطلاعات شخصی</string>
+    <string name="item_shopInfo">اطلاعات فروشگاه</string>
+    <string name="item_edit_pass">تغییر رمز ورود</string>
+    <string name="item_setting">تنظیمات</string>
+    <string name="item_exit">خروج</string>
+    <string name="btn_confirm">ثبت</string>
+    <string name="btn_recovery">بازیابی</string>
+    <string name="btn_exit">انصراف</string>
+    <string name="btn_delete">حذف</string>
+    <string name="btn_edit">ویرایش</string>
+    <string name="btn_sell">فروش</string>
+    <string name="btn_inser_object">افزودن کالا</string>
+    <string name="btn_new_object">کالای جدید</string>
+    <string name="txt_address">آدرس</string>
+    <string name="txt_tel">تلفن</string>
+    <string name="txt_mobile_star">شماره همراه *</string>
+    <string name="txt_mobile">شماره همراه</string>
+    <string name="txt_reppass_star">رمز را مجدد وارد کنید *</string>
+    <string name="txt_pass_star">رمز عبور *</string>
+    <string name="txt_pass">رمز عبور</string>
+    <string name="register">ثبت نام</string>
+    <string name="btn_next">بعدی</string>
+    <string name="btn_input">ورود</string>
+    <string name="txt_shop_insert">در این قسمت می توانید فروشگاه خود را ایجاد کنید</string>
+    <string name="btn_select_pic">انتخاب عکس</string>
+    <string name="btn_extra_shop_info">فروشگاه</string>
+    <string name="btn_extra_order">سفارش</string>
+    <string name="btn_retry_againg">تلاش مجدد</string>
+    <string name="error_edit_pass">رمز جدید را وارد کنید</string>
+    <string name="error_edit_repPass">رمز را مجدد وارد کنید</string>
+    <string name="txt_user_star">نام کاربری *</string>
+    <string name="txt_shop">نام فروشگاه *</string>
+    <string name="txt_shop_star">نام فروشگاه</string>
+    <string name="txt_job">نوع کسب *</string>
+    <string name="txt_job_star">نوع کسب</string>
+    <string name="txt_user">نام کاربری</string>
+    <string name="txt_user_type">نوع کاربری</string>
+    <string name="txt_name_family_star">نام و نام خانوادگی *</string>
+    <string name="txt_name_family">نام و نام خانوادگی</string>
+    <string name="txt_unit">واحد</string>
+    <string name="txt_description">توضیحات</string>
+    <string name="txt_sell_special">شرایط ویژه</string>
+    <string name="txt_amount">مقدار سفارش</string>
+    <string name="txt_toman">تومان</string>
+    <string name="txt_text">توسط</string>
+    <string name="txt_codeObject">کد کالا</string>
+    <string name="txt_objectName">نام کالا</string>
+    <string name="isShop">فروشگاه دارد</string>
+    <string name="notShop">فروشگاه ندارد</string>
+    <string name="txt_objectPrice">قیمت کالا</string>
+    <string name="edt_inventory_object">موجودی کالا</string>
+    <string name="txt_objectPic">انتخاب عکس</string>
+    <string name="chk_show_pass">نمایش رمز</string>
+    <string name="chk_admin">ادمین باشد</string>
+    <string name="seen">بررسی شد</string>
+    <string name="not_seen">بررسی نشده</string>
+    <string name="confirm">به فروشگاه اضافه شد</string>
+    <string name="not_confirm">هنوز تایید نشده</string>
+    <string name="title_tab_user_for_admin">پاساژ</string>
+    <string name="title_tab_shop_agree">تایید فروشگاه</string>
+    <string name="title_tab_objectList_agree">تایید کالا</string>
+    <string name="title_tab_sell_special_agree">تایید شرایط ویژه</string>
+    <string name="title_tab_commen">نظرات</string>
+    <string name="title_tab_user_list">لیست اعضا</string>
+    <string name="title_tab_object_list">فروشگاه</string>
+    <string name="title_tab_my_object">فروش</string>
+    <string name="title_tab_sell_special">فوق العاده</string>
+    <string name="title_tab_shop_list">فروشندگان</string>
+    <string name="title_tab_fav_shop">فروشگاه برگزیده</string>
+    <string name="title_tab_archive">ّبایگانی</string>
+    <string name="title_tab_myShop">فروشگاه من</string>
+    <string name="title_tab_order_user">درخواست</string>
+    <string name="title_tab_order_admin">سفارشات</string>
+    <string name="title_tab_sell_special_admin">شرایط ویژه</string>
+    <string name="txt_input_title">عنوان</string>
+    <string name="txt_input_sell_special">شرایط</string>
+    <string name="title_tab_insert_object">افزودن کالا</string>
+    <string name="title_tab_store">انبار</string>
+    <string name="title_tab_sell">فروش</string>
+    <string name="title_tab_buy">خرید</string>
+    <string name="user">نام کاربر</string>
+    <string name="warrning_order_delete">آیا از حذف درخواست مورد نظر مطمئن هستید</string>
+    <string name="warrning_object_delete">آیا از حذف کالا مطمئن هستید</string>
+    <string name="notic_object_delete">هشدار حذف کالا!</string>
+    <string name="warrning_fill_field">لطفا گزینه های ستاره دار را تکمیل کنید</string>
+    <string name="warrning_rep_user">نام کاربری تکراری میباشد</string>
+    <string name="warrning_input_objectName">اسم کالا را وارد کنید</string>
+    <string name="warrning_connect_to_net">لطفا به اینترنت متصل شوید</string>
+    <string name="warrning_input_mobileNumber">شماره ای وارد نشده</string>
+    <string name="warrnig_not_equal_pass">رمزها با هم مطابقت ندارند</string>
+    <string name="warrning_mistake_user_or_pass">نام کاربری یا رمز عبور اشتباه میباشد</string>
+    <string name="warrning_input_user_or_pass">نام کاربری و رمز عبور را وارد کنید</string>
+    <string name="warrning_error_net">لطفا ارتباط خود با اینترنت چک کنید</string>
+    <string name="warrning_error1">عملیات با خطا مواجه شد</string>
+    <string name="warrning_authorization_error">عملیات شناسائی با خطا مواجه شد</string>
+    <string name="warrning_change_language">لطفا زبان رو لاتین انتخاب کنید</string>
+    <string name="warrning_not_empty">این ستون را پر کنید</string>
+    <string name="warrning_amount_order">لطف مقدار شفارش را وارد کنید</string>
+    <string name="warrning_input_pass">عدد را وارد کنید</string>
+    <string name="message_app">پیام برنامه</string>
+    <string name="path_download_app">مسیر ذخیره برنامه</string>
+    <string name="user_sample">عادی</string>
+    <string name="admin">ادمین</string>
+    <string name="forget">رمز خود را فراموش کردی؟</string>
+    <string name="empty_objectList">لیست کالا خالی میباشد</string>
+    <string name="open_drawer">open drawer</string>
+    <string name="close_drawer">close drawer</string>
+    <string name="select_pic">انتخاب عکس پروفایل</string>
+    <string name="yes">بله</string>
+    <string name="no">خیر</string>
+    <string name="close">بستن</string>
+    <string name="download">دانلود</string>
+    <string name="text">میباشد</string>
+    <string name="version">نسخه برنامه</string>
+    <string name="install_app">نصب برنامه</string>
+    <string name="current_version">اطلاعات نسخه فعلی برنامه</string>
+    <string name="updated_app">برنامه شما بروز میباشد</string>
+    <string name="not_updated_app">نسخه بروز برنامه برای دانلود موجود میباشد</string>
+    <string name="item_shop">ثبت فروشگاه</string>
+    <string name="item_version">نسخه برنامه</string>
+    <string name="item_comment">نظرات</string>
+    <string name="item_help">راهنما</string>
+    <string name="item_about">درباره</string>
+    <string name="msg_comment">لطف نظر خود را بدهید</string>
+    <string name="txt_msg_comment">لطفا نظرات خود و یا برنامه مشکلی دارد را به ما اعلام کنید</string>
+    <string name="txt_sell_special_for_admin">در صورت داشتن شرایط ویژه برای فروش این قسمت را پر کنید</string>
+    <string name="txt_edit_sell_special_for_admin">شرایط ویژه شما برای فروش ثبت شد در صورت لزوم آن را ویرایش یا حذف کنید</string>
+
+    <string name="title_activity_admin_manager">AdminManager</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_user_manager">UserManager</string>
+
+
+    <string name="query_srch_object">نام کالا را وارد کنید</string>
+    <string name="query_srch_order">شماره سفارش دهنده را وارد کنید</string>
+    <string name="query_srch_user">نام کاربر را وارد کنید</string>
+    <string name="query_srch_register">شماره همراه را وارد کنید</string>
+    <string name="query_srch_job">نوع کسب را وارد کنید</string>
+    <string name="txt_input_mobile">شماره همراه خود را وارد کنید</string>
+    <string name="txt_input_pass">عدد ارسال شده را وارد کنید</string>
+    <string name="authorization_message">لطفا چند لحظه صبر کنید...</string>
+    <string name="tilt_download">دانلود نسخه جدید</string>
+
+
+    <!--help for user-->
+    <string name="hlp_des_reg_shop">در این بخش میتوانید با ثبت اطلاعات خود یک فروشگاه داشته باشید که کالای خود را به فروش برسانید</string>
+    <string name="hlp_des_objLst">در این بخش لیست کل کالاهایی که توسط فروشگاه ها برای فروش گذاشته شده است را به همراه اطلاعات کالا مشاهده کنید</string>
+    <string name="hlp_des_shopList">در این بخش لیست کل فروشگاه های ثبت شده در برنامه را به همراه مشخصات مشاهده میکنید</string>
+    <string name="hlp_des_myOrder">در این بخش میتوانید تمامی سفارشات شما بابت خرید کالا از فروشگاه ها را مشاهده کنید</string>
+    <string name="hlp_des_sell_special">در این بخش میتوانید شرایط ویژه فروشگاه ها را جهت فروش کالا مشاهده کنید</string>
+
+    <!--help for admin-->
+    <string name="hlp_des_adminOrder">در این بخش مینوانید سفارشات ثبت شده مشتری جهت خرید کالای شما را مشاهده کنید</string>
+    <string name="hlp_des_insert_object">در این بخش میتوانید کالای خود را به انبار اضافه کنید</string>
+    <string name="hlp_des_store">در این بخش میتوانید تمامی کالاهای ثبت شده خود را مشاهده کرده و آنها را ویرایش یا جهت فروش به بخش فروش اضافه کنید</string>
+    <string name="hlp_des_shop">در این بخش میتوانید کالاهای خود را که برای فروش گذاشتید مشاهده کنید</string>
+    <string name="hlp_des_sell_special_admin">این بخش را میتوانید در صورت داشتن شرایط ویژه برای فروش کالاهای خود مانند تخفیف در قیمت کالا پر کنید</string>
+
+
+    <string name="about_des">هدف از ساخت برنامه نهاوند پاساژ این است که همه بتوانند یک فروشگاه مجازی برای فروش کالای خود بدون واسطه داشته باشند و همچنین خریدار هم بتواند کالای مورد نظر خود را با قیمتی مناسب و به صورت مستقیم از فروشنده خریداری کند</string>
+
+    <string name="txt_empty_objectList_admin">کالائی برای فروش ندارید لطفا کالای مورد نظر خود را از انبار اضافه کنید</string>
+    <string name="txt_empty_storeList">انبار خالی میباشد لطفا از بخش افزودن کالا ،کالای مورد نظر را به انبار اضافه کنید</string>
+    <string name="txt_empty_orderList_admin">شما هیچ سفارشی ندارید</string>
+    <string name="txt_empty_objectList_user">کالائی برای فروش وجود ندارد</string>
+    <string name="txt_empty_orderList_user">درخواستی وارد نشده میتوانید از فروشگاه کالای مورد نظر خود را جهت خرید سفارش دهید</string>
+    <string name="txt_empty_shopList">فروشگاهی ثبت نشده استِ</string>
+    <string name="txt_empty_sell_special_user">شرایط ویژه ای ثبت نشده استِ</string>
+    <string name="txt_wait_agree">درخواست شما ثبت شد لطفا منتظر تایید فروشگاه باشید</string>
+    <string name="txt_wait_agree_sellSpecial">درخواست شما ثبت شد لطفا منتظر تایید باشید</string>
+    <string name="txt_confirm">فروشگاه شما تایید شد</string>
+
+    <string name="mes_insert_sell_special">شرایط ویژه اضافه شد</string>
+    <string name="mes_edit_sell_special">شرایط ویژه ویرایش شد</string>
+    <string name="mes_delete_sell_special">شرایط ویژه حذف شد</string>
+
+    <string name="mes_install_bazar">برای نصب برنامه از بازار ابتدا برنامه بازار رو نصب کنید</string>
+
+    <array name="def_sel_info">
+        <item>name</item>
+        <item>shop</item>
+        <item>job</item>
+        <item>mobile</item>
+        <item>phone</item>
+        <item>address</item>
+    </array>
+
+    <string name="def_val">Andy</string>
+    <array name="def_arr">
+        <item>Andy</item>
+    </array>
+
+    <string name="def">name</string>
+    <string name="personal">شخصی</string>
+    <string name="show_info">نمایش اطلاعات</string>
+    <string name="show_info_des">اطلاعات مربوط به فروشگاه که مایل هستید برای کاربران نمایش داده شود</string>
+
+    <string name="input_pass">رمز ارسال شده را وارد کنید</string>
+    <string name="title_activity_settings">Settings</string>
+
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+</resources>

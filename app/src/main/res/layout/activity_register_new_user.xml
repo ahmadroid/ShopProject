@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="rtl"
+    tools:context=".RegisterNewUser">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/linlayout_style">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/txtview_style"
+                    android:layout_width="115dp"
+                    android:text="@string/txt_name_family_star"
+                    android:textColor="#d42329"
+                    android:textSize="13sp" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/edt_name_register_new_user"
+                    style="@style/edttext_style"
+                    android:inputType="textPersonName" />
+
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/linlayout_style">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/txtview_style"
+                    android:layout_width="115dp"
+                    android:text="@string/txt_user_star"
+                    android:textColor="#d42329" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/edt_user_register_new_user"
+                    style="@style/edttext_style"
+                    android:inputType="textPersonName" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txt_warrning_register_new_user"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="1dp"
+                    android:text="@string/warrning_rep_user"
+                    android:textColor="#f20000"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/linlayout_style">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/txtview_style"
+                    android:layout_width="115dp"
+                    android:text="@string/txt_pass_star"
+                    android:textColor="#d42329" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/edt_pass_register_new_user"
+                    style="@style/edttext_style"
+                    android:inputType="textPassword" />
+
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/linlayout_style">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/txtview_style"
+                    android:layout_width="115dp"
+                    android:text="@string/txt_reppass_star"
+                    android:textColor="#d42329"
+                    android:textSize="12sp" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/edt_rep_pass_register_new_user"
+                    style="@style/edttext_style"
+                    android:inputType="textPassword" />
+
+
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatCheckBox
+                android:id="@+id/chkbox_register_new_user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:background="@drawable/draw_arround_textview"
+                android:layout_gravity="end"
+                android:padding="5dp"
+                android:text="@string/chk_show_pass" />
+
+            <LinearLayout style="@style/linlayout_style">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/txtview_style"
+                    android:layout_width="115dp"
+                    android:inputType="number"
+                    android:text="@string/txt_mobile_star"
+                    android:textColor="#d42329" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/edt_mobile_register_new_user"
+                    style="@style/edttext_style"
+                    android:inputType="phone" />
+
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/linlayout_style">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/txtview_style"
+                    android:layout_width="115dp"
+                    android:inputType="number"
+                    android:text="@string/txt_tel" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/edt_tel_register_new_user"
+                    style="@style/edttext_style"
+                    android:inputType="phone" />
+
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/linlayout_style">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/txtview_style"
+                    android:layout_width="50dp"
+                    android:text="@string/txt_address" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/edt_address_register_new_user"
+                    android:layout_width="0dp"
+                    android:layout_height="70dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/draw_arround_edittext"
+                    android:gravity="right"
+                    android:inputType="textPersonName"
+                    android:padding="3dp"
+                    android:maxLines="3" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_insertuser_register_new_user"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/draw_btn_new"
+                    android:layout_marginBottom="2dp"
+                    android:text="@string/btn_confirm" />
+
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txt_notfull_register_new_user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginTop="5dp"
+                android:padding="1dp"
+                android:text="@string/warrning_fill_field"
+                android:textColor="#ef1426"
+                android:visibility="gone" />
+
+            <ProgressBar
+                android:id="@+id/prog_register_new_user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:visibility="invisible" />
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

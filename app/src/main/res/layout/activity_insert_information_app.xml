@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="rtl"
+    tools:context=".InsertInformationApp">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/linlayout_style">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/txtview_style"
+                    android:layout_width="80dp"
+                    android:text="@string/item_version"
+                    android:textSize="13sp" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/edt_version_insert_info_app"
+                    style="@style/edttext_style"
+                    android:inputType="textPersonName" />
+
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/linlayout_style">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/txtview_style"
+                    android:layout_width="80dp"
+                    android:text="@string/message_app" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/edt_message_insert_info_app"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/draw_arround_edittext"
+                    android:gravity="right"
+                    android:lines="10"
+                    android:padding="3dp"
+                    />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_insert_info_app"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/draw_btn_new"
+                    android:layout_marginBottom="2dp"
+                    android:text="@string/btn_confirm" />
+
+            </LinearLayout>
+
+            <ProgressBar
+                android:id="@+id/prog_insert_info_app"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:visibility="invisible" />
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

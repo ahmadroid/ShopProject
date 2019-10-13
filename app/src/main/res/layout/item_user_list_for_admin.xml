@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:layoutDirection="rtl"
+    android:layout_margin="5dp"
+    android:background="@drawable/draw_arround_image">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txt_name_item_user_lis_for_admin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5dp"
+        android:gravity="right|center_vertical"
+        android:padding="2dp"
+        android:text="@string/user"
+        android:textColor="#000" />
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txt_mobile_item_user_lis_for_admin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_name_item_user_lis_for_admin"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="5dp"
+        android:gravity="right|center_vertical"
+        android:padding="2dp"
+        android:text="@string/txt_mobile"
+        android:textColor="#6e6e6e" />
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txt_userType_item_user_lis_for_admin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dp"
+        android:padding="2dp"
+        android:text="@string/txt_user_type"
+        android:textColor="#f20e0e" />
+
+</RelativeLayout>

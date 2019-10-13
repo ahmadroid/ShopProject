@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2e7b7b"
+    android:layoutDirection="rtl"
+    android:orientation="vertical"
+    tools:context=".RequestLogin">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:textColor="#e60808"
+        android:textSize="40sp" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#f8f8fa"
+            android:backgroundTint="#3b4339"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <ProgressBar
+                android:id="@+id/prog_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:visibility="invisible" />
+
+            <LinearLayout
+                style="@style/linlayout_style"
+                android:layout_height="35dp">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txt_lin1_main"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/draw_arround_textview"
+                    android:gravity="center"
+                    android:text="@string/txt_user" />
+
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/edt_user_request"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="2"
+                    android:background="@drawable/draw_arround_edittext"
+                    android:gravity="right|center_vertical"
+                    android:paddingLeft="1dp"
+                    android:paddingRight="1dp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/linlayout_style"
+                android:layout_height="35dp">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txt_lin2_main"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/draw_arround_textview"
+                    android:gravity="center"
+                    android:text="@string/txt_pass" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/edt_pass_request"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="2"
+                    android:background="@drawable/draw_arround_edittext"
+                    android:gravity="right|center_vertical"
+                    android:inputType="textPassword"
+                    android:paddingLeft="1dp"
+                    android:paddingRight="1dp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_login_request"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/btn_input"
+                    android:textAllCaps="false" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_register_request"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/register"
+                    android:textAllCaps="false" />
+
+
+            </LinearLayout>
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txt_forgetpass_request"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/draw_arround_edittext"
+                android:padding="4dp"
+                android:text="@string/forget" />
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="10dp"
+        android:fitsSystemWindows="true"
+        android:orientation="horizontal"
+        android:padding="2dp">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:padding="2dp"
+            android:text="@string/txt_tel" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textDirection="rtl"
+            android:textSize="17sp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:fitsSystemWindows="true"
+        android:orientation="horizontal"
+        android:padding="2dp">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:padding="2dp"
+            android:text="@string/txt_address" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:textSize="17sp" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

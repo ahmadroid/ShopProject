@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".UserPage">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/rel_layout_list_user"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.SearchView
+                android:id="@+id/srch_view_list_user"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:queryHint="@string/query_srch_object"
+                app:searchHintIcon="@drawable/ic_object" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_list_user"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/srch_view_list_user" />
+
+            <ProgressBar
+                android:id="@+id/prog_list_user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:visibility="invisible" />
+        </RelativeLayout>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txt_empty_list_user"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="120dp"
+            android:background="@drawable/draw_txt_list_empty"
+            android:gravity="center"
+            android:lines="4"
+            android:text="@string/txt_empty_objectList_user"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            android:visibility="invisible" />
+
+    </RelativeLayout>
+
+</androidx.core.widget.NestedScrollView>

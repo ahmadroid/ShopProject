@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="rtl"
+    tools:context=".OrderPageForAdmin">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:orientation="vertical">
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/input_layout_style"
+                app:helperText="@string/user"
+                android:paddingRight="5dp"
+                >
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txt_user_order_admin"
+                    style="@style/txt_input_layout_style" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/input_layout_style"
+                app:helperText="@string/txt_objectName"
+                android:paddingRight="5dp"
+                >
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txt_name_order_admin"
+                    style="@style/txt_input_layout_style" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/input_layout_style"
+                app:helperText="@string/txt_amount"
+                android:paddingRight="5dp"
+                >
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txt_amount_order_admin"
+                    style="@style/txt_input_layout_style" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/input_layout_style"
+                app:helperText="@string/txt_unit"
+                android:paddingRight="5dp"
+                >
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txt_unit_order_admin"
+                    style="@style/txt_input_layout_style" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/input_layout_style"
+                app:helperText="@string/txt_description"
+                android:paddingRight="5dp"
+                >
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txt_description_order_admin"
+                    android:lines="3"
+                    style="@style/txt_input_layout_style" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_seen_order_admin"
+                    style="@style/btn_style"
+                    android:layout_marginLeft="5dp"
+                    android:text="@string/seen" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_delete_order_admin"
+                    style="@style/btn_style"
+                    android:text="@string/btn_delete" />
+
+            </LinearLayout>
+
+            <ProgressBar
+                android:id="@+id/prog_order_admin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:visibility="invisible" />
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

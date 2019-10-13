@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:fitsSystemWindows="true"
+    android:layoutDirection="rtl">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/draw_arround_image"
+        android:padding="10dp">
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txt_name_item_sell_special_agree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right|center_horizontal"
+            android:lines="1"
+            android:padding="2dp"
+            android:text="@string/txt_shop_star"
+            android:textColor="#0f0"
+            android:textSize="20sp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txt_title_item_sell_special_agree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_name_item_sell_special_agree"
+            android:layout_centerHorizontal="true"
+            android:gravity="right|center_horizontal"
+            android:lines="1"
+            android:padding="2dp"
+            android:text="@string/txt_input_title"
+            android:textColor="#fd0303" />
+
+        <LinearLayout
+            android:id="@+id/lin_layout_item_sell_special_agree"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/txt_title_item_sell_special_agree"
+            android:background="@drawable/draw_input_edittext"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txt_special_item_sell_special_agree"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/txt_title_item_sell_special_agree"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:hint="@string/txt_sell_special"
+                android:inputType="textMultiLine"
+                android:padding="5dp"
+                android:scrollbars="vertical"
+                android:textColor="#161616" />
+
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatCheckBox
+            android:id="@+id/chkbox_item_sell_special_agree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="5dp"
+            android:text="agree" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/flt_btn_item_sell_special_agree"
+            style="@style/float_style"
+            android:backgroundTint="#fff"
+            android:src="@drawable/ic_delete_large_green"
+            app:fabCustomSize="40dp" />
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

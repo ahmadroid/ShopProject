@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="unit_array">
+
+        <item>عدد</item>
+        <item>نفر</item>
+        <item>کیلو</item>
+        <item>تخته</item>
+        <item>تن</item>
+        <item>متر</item>
+        <item>گرم</item>
+        <item>لیتر</item>
+        <item>شیلینگ</item>
+        <item>جین</item>
+        <item>سرویس</item>
+        <item>توپ</item>
+        <item>بسته</item>
+        <item>جعبه</item>
+        <item>سبد</item>
+        <item>دستگاه</item>
+        <item>ورق</item>
+    </string-array>
+
+    <string-array name="spin_help_user">
+        <item>ثبت فروشگاه</item>
+        <item>فروشگاه</item>
+        <item>درخواست</item>
+        <item>فروشندگان</item>
+        <item>فوق العاده</item>
+    </string-array>
+
+    <string-array name="spin_help_admin">
+        <item>سفارشات</item>
+        <item>افزودن کالا</item>
+        <item>انبار</item>
+        <item>فروش</item>
+        <item>شرایط ویژه</item>
+        <item>فروشگاه</item>
+        <item>درخواست</item>
+        <item>فروشندگان</item>
+        <item>فوق العاده</item>
+    </string-array>
+
+    <string-array name="entries_sel_info_shop">
+        <item>نام و نام خانوادگی</item>
+        <item>نام فروشگاه</item>
+        <item>نوع کسب</item>
+        <item>شماره همراه</item>
+        <item>تلفن</item>
+        <item>آدرس</item>
+    </string-array>
+
+    <!--    <string-array name="def_sel_info_shop">-->
+    <!--        <item>name</item>-->
+    <!--        <item>shop</item>-->
+    <!--        <item>job</item>-->
+    <!--        <item>mobile</item>-->
+    <!--        <item>phone</item>-->
+    <!--        <item>address</item>-->
+    <!--    </string-array>-->
+
+    <!--    <string-array name="entris_val_sel_info_shop">-->
+    <!--        <item>name</item>-->
+    <!--        <item>shop</item>-->
+    <!--        <item>job</item>-->
+    <!--        <item>mobile</item>-->
+    <!--        <item>phone</item>-->
+    <!--        <item>address</item>-->
+    <!--    </string-array>-->
+
+    <string-array name="entry_val_sel_info_shop">
+        <item>name</item>
+        <item>shop</item>
+        <item>job</item>
+        <item>mobile</item>
+        <item>phone</item>
+        <item>address</item>
+    </string-array>
+
+
+    <string-array name="singer_name">
+        <item>andy</item>
+        <item>moein</item>
+        <item>ebi</item>
+        <item>leila</item>
+
+    </string-array>
+
+    <string-array name="singer_key">
+        <item>Andy</item>
+        <item>Moein</item>
+        <item>Ebi</item>
+        <item>Leila</item>
+
+    </string-array>
+    <!-- Reply Preference -->
+    <string-array name="reply_entries">
+        <item>Reply</item>
+        <item>Reply to all</item>
+    </string-array>
+
+    <string-array name="reply_values">
+        <item>reply</item>
+        <item>reply_all</item>
+    </string-array>
+</resources>

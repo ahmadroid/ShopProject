@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/item_edit_shop"
+            android:icon="@drawable/ic_store_mall_directory"
+            android:title="@string/item_shopInfo" />
+        <!--<item-->
+        <!--android:id="@+id/item_select_pic_admin"-->
+        <!--android:icon="@drawable/baseline_add_a_photo_black_18dp"-->
+        <!--android:title="@string/select_pic" />-->
+        <item
+            android:id="@+id/item_insert_info_admin"
+            android:title="insert information" />
+        <item
+            android:id="@+id/item_setting_admin"
+            android:icon="@drawable/ic_settings_black_24dp"
+            android:title="@string/item_setting" />
+        <item
+            android:id="@+id/item_version_admin"
+            android:icon="@drawable/ic_about"
+            android:title="@string/item_version" />
+
+        <item
+            android:id="@+id/item_comment_admin"
+            android:icon="@drawable/ic_comment"
+            android:title="@string/item_comment" />
+        <item
+            android:id="@+id/item_help_admin"
+            android:icon="@drawable/ic_action_help"
+            android:title="@string/item_help" />
+        <item
+            android:id="@+id/item_about_admin"
+            android:icon="@drawable/ic_action_info"
+            android:title="@string/item_about" />
+    </group>
+
+    <item
+        android:id="@+id/item_exit_admin"
+        android:icon="@drawable/baseline_power_settings_new_black_18dp"
+        android:title="@string/item_exit" />
+</menu>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/item_insert"
+        android:title="اضافه کردن کالا" />
+    <item android:id="@+id/item_objectList"
+        android:title="لیست کالا"/>
+    <item android:id="@+id/item_customerList"
+        android:title="لیست مشتری"/>
+    <item android:id="@+id/item_pager"
+        android:title="Pager"/>
+
+</menu>

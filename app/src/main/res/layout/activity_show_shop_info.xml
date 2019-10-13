@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="rtl"
+    tools:context=".ShowShopInfo">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:orientation="vertical">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/txt_input_name_show_shop_info"
+                style="@style/input_layout_style"
+                app:helperText="@string/txt_name_family"
+                android:paddingRight="5dp"
+                android:visibility="gone"
+                >
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txt_name_show_shop_info"
+                    style="@style/txt_input_layout_style"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/txt_input_shop_show_shop_info"
+                style="@style/input_layout_style"
+                app:helperText="@string/txt_shop_star"
+                android:paddingRight="5dp"
+                android:visibility="gone"
+                >
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txt_shop_show_shop_info"
+                    style="@style/txt_input_layout_style"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/txt_input_job_show_shop_info"
+                style="@style/input_layout_style"
+                app:helperText="@string/txt_job_star"
+                android:paddingRight="5dp"
+                android:visibility="gone"
+                >
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txt_job_show_shop_info"
+                    style="@style/txt_input_layout_style" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/txt_input_mobile_show_shop_info"
+                style="@style/input_layout_style"
+                app:helperText="@string/txt_mobile"
+                android:paddingRight="5dp"
+                android:visibility="gone"
+                >
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txt_mobile_show_shop_info"
+                    style="@style/txt_input_layout_style" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/txt_input_phone_show_shop_info"
+                style="@style/input_layout_style"
+                app:helperText="@string/txt_tel"
+                android:paddingRight="5dp"
+                android:visibility="gone"
+                >
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txt_phone_show_shop_info"
+                    style="@style/txt_input_layout_style"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/txt_input_address_show_shop_info"
+                style="@style/input_layout_style"
+                app:helperText="@string/txt_address"
+                android:paddingRight="5dp"
+                android:visibility="gone"
+                >
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txt_address_show_shop_info"
+                    android:lines="3"
+                    style="@style/txt_input_layout_style"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

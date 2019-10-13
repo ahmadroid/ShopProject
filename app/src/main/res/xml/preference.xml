@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <PreferenceCategory
+        android:title="Video"
+
+        >
+
+        <EditTextPreference
+            android:defaultValue="Default value"
+            android:key="video_edt"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:summary="Input singer name:"
+            android:title="Singer Name" />
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="video_chek"
+            android:persistent="true"
+            android:summaryOff="Stop"
+            android:summaryOn="Play"
+            android:title="Play or no?" />
+        <MultiSelectListPreference
+            android:defaultValue="@bool/def_val_sel1"
+            android:entries="@array/entries_sel_info_shop"
+            android:entryValues="@array/entry_val_sel_info_shop"
+            android:key="video_sel"
+            android:summary="singer list"
+            android:title="Multi select list preference" />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:title="Audio"
+        >
+
+        <EditTextPreference
+            android:defaultValue="Default value"
+            android:key="audio_edt"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:summary="input singer name"
+            android:title="Singer Name" />
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="audio_switch"
+            android:persistent="true"
+            android:summaryOff="Stop"
+            android:summaryOn="Play"
+            android:title="Play or no?" />
+        <ListPreference
+            android:defaultValue="1"
+            android:entries="@array/singer_key"
+            android:entryValues="@array/singer_name"
+            android:key="audio_sel"
+            android:title="List preference" />
+        <RingtonePreference
+
+            android:key="ringtone_preference_1"
+            android:title="Ringtone preference" />
+    </PreferenceCategory>
+</PreferenceScreen>

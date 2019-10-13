@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.SearchView
+            android:id="@+id/srch_view_admin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            app:queryHint="@string/query_srch_user"
+            app:searchHintIcon="@drawable/ic_action_user"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_user_for_admin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/srch_view_admin">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+        <ProgressBar
+            android:id="@+id/prog_admin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

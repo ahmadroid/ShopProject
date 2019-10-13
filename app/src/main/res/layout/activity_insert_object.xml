@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:layoutDirection="rtl"
+    android:padding="5dp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <LinearLayout
+                style="@style/linlayout_style"
+                android:visibility="gone">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/txtview_style"
+                    android:layout_width="80dp"
+                    android:text="@string/txt_codeObject" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txt_codeobject_insert"
+                    style="@style/edttext_style" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_selectPic_insert"
+                    style="@style/btn_style"
+                    android:layout_width="80dp"
+                    android:text="@string/txt_objectPic"
+                    android:visibility="gone" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/imge_selectPic_insert"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/draw_arround_image"
+                    android:padding="2dp"
+                    android:scaleType="fitXY"
+                    android:src="@android:drawable/ic_dialog_alert" />
+
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/imge_delete_insert"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignLeft="@+id/imge_selectPic_insert"
+                    android:layout_gravity="center_vertical"
+                    android:src="@android:drawable/btn_dialog"
+                    android:visibility="invisible"
+                    app:srcCompat="@android:drawable/ic_delete" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/imge_add_pic_insert"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_centerInParent="true"
+                    app:srcCompat="@android:drawable/ic_input_add" />
+
+            </RelativeLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/input_layout_style"
+                android:hint="@string/txt_objectName">
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/edt_object_name_insert"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/input_layout_style"
+                android:hint="@string/txt_objectPrice">
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/edt_price_insert"
+                    style="@style/input_edttext_style"
+                    android:text="0"
+                    android:inputType="number" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/input_layout_style"
+                android:hint="@string/edt_inventory_object">
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/edt_inventory_insert"
+                    style="@style/input_edttext_style"
+                    android:text="0"
+                    android:inputType="number" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/input_layout_style"
+                android:hint="@string/txt_unit">
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/edt_unit_insert"
+                    style="@style/input_edttext_style"
+                    android:inputType="textPersonName" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/input_layout_style"
+                android:hint="@string/txt_description">
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/edt_description_insert"
+                    style="@style/input_edttext_style"
+                    android:inputType="textMultiLine"
+                    android:lines="3" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_centerInParent="true"
+                    android:layout_margin="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#fff"
+                    android:padding="5dp"
+                    android:gravity="center">
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/btn_insert_insert"
+                        style="@style/btn_style"
+                        android:text="@string/btn_inser_object" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/btn_newObject_insert"
+                        style="@style/btn_style"
+                        android:text="@string/btn_new_object"
+                        android:visibility="gone"/>
+
+                </LinearLayout>
+            </RelativeLayout>
+
+
+
+
+            <ProgressBar
+                android:id="@+id/prog_insert"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:visibility="invisible" />
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

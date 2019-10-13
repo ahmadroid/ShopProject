@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="rtl"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/lin_layout_insert_sell_special"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txt_description_insert_sell_special"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="@string/txt_sell_special_for_admin" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/input_layout_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/txt_input_title">
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/edt_title_insert_sell_special"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/input_layout_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/txt_input_sell_special">
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/edt_text_insert_sell_special"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textMultiLine"
+                    android:lines="6" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_insert_sell_special"
+                style="@style/btn_style"
+                android:layout_width="match_parent"
+                android:layout_marginTop="5dp"
+                android:text="@string/btn_confirm"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:id="@+id/lin1_layout_insert_sell_special"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                android:visibility="gone">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_edit_insert_sell_special"
+                    style="@style/btn_style"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="5dp"
+                    android:text="@string/btn_edit"
+                    android:textSize="20sp" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_delete_insert_sell_special"
+                    style="@style/btn_style"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="@string/btn_delete"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/prog_insert_sell_special"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:visibility="invisible" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txt_wait_agree_insert_sell_special"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="120dp"
+            android:background="@drawable/draw_txt_list_empty"
+            android:gravity="center"
+            android:lines="4"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            android:visibility="invisible" />
+
+    </RelativeLayout>
+
+
+</androidx.core.widget.NestedScrollView>

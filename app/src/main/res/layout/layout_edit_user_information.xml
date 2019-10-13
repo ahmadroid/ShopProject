@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="rtl"
+    tools:context=".RegisterNewUser">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:fitsSystemWindows="true"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                style="@style/linlayout_style">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="100dp"
+                    style="@style/txtview_style"
+                    android:text="@string/txt_name_family"
+                    android:textSize="13sp" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/edt_name_edit_register"
+                    style="@style/edttext_style"
+                    android:inputType="textPersonName" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/linlayout_style">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="100dp"
+                    style="@style/txtview_style"
+                    android:text="@string/user"
+                    />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/edt_user_edit_register"
+                    style="@style/edttext_style"
+                    android:inputType="textPersonName"
+                    android:enabled="false"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/linlayout_style">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="100dp"
+                    style="@style/txtview_style"
+                    android:text="@string/txt_mobile"
+                    />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/edt_mobile_edit_register"
+                    style="@style/edttext_style"
+                    android:inputType="phone" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/linlayout_style">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="100dp"
+                    style="@style/txtview_style"
+                    android:text="@string/txt_tel"
+                    android:textColor="#151414" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/edt_tel_edit_register"
+                    style="@style/edttext_style"
+                    android:inputType="phone" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/linlayout_style">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="50dp"
+                    style="@style/txtview_style"
+                    android:text="@string/txt_address"
+                    android:textColor="#232020" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/edt_address_edit_register"
+                    android:layout_width="0dp"
+                    android:layout_height="70dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/draw_arround_edittext"
+                    android:gravity="right"
+                    android:inputType="textPersonName"
+                    android:padding="3dp"
+                    android:maxLines="3" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_edit_edit_register"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/draw_btn_new"
+                    android:layout_marginBottom="2dp"
+                    android:text="@string/btn_confirm" />
+
+            </LinearLayout>
+
+            <ProgressBar
+                android:id="@+id/prog_edit_register"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:visibility="invisible" />
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

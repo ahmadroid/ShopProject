@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.ahmad2.shopproject">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> <!-- <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> -->
+    <!-- <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" /> -->
+    <!-- <uses-permission android:name="android.permission.SEND_SMS" /> -->
+    <!-- <uses-permission android:name="android.permission.READ_SMS" /> -->
+    <!-- <uses-permission android:name="android.permission.RECEIVE_SMS" /> -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:name=".App"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".SettingsActivity"
+            android:label="@string/title_activity_settings"></activity>
+        <activity
+            android:name=".RequestLogin"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".UserPage"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".ObjectInformation" />
+        <activity android:name=".RegisterNewUser" />
+        <activity
+            android:name=".AdminPage"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".EditUserInformationActivity" />
+        <activity android:name=".EditUserInfoForAdmin" />
+        <activity android:name=".OrderPageForAdmin" />
+        <activity android:name=".OrderPageForUser" />
+        <activity android:name=".InsertOrderUser" />
+
+        <receiver
+            android:name=".SmsBroadCast"
+            android:permission="android.permission.BROADCAST_SMS">
+            <intent-filter>
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+            </intent-filter>
+        </receiver>
+
+        <activity android:name=".SmsActivity" />
+        <activity android:name=".EditPassword" />
+        <activity android:name=".SelectImageProfile" />
+        <activity android:name=".RecoveryPass" />
+        <activity android:name=".InsertShopActivity" />
+        <activity android:name=".EditShopInformation" />
+        <activity
+            android:name=".RegisterActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ShowShopInfo" />
+        <activity android:name=".InsertInformationApp" />
+        <activity android:name=".InsertComment" /> <!-- <receiver android:name=".CheckConnect"> -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/> -->
+        <!-- </intent-filter> -->
+        <!-- </receiver> -->
+        <activity android:name=".NotConnectActivity" />
+        <activity android:name=".HelpForUser" />
+        <activity android:name=".HelpForAdmin" />
+        <activity android:name=".AboutActivity" />
+    </application>
+
+</manifest>
